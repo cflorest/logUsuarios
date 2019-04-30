@@ -1,5 +1,12 @@
 <?php
 include("lib/constantes.php");
+
+
+if (isset($_SESSION["Usuario"])){
+    header("location:".URLBASE."controladores/AccUsuario.php");
+    exit;
+}
+
 ?>
 <!DOCTYPE html>
 <!--

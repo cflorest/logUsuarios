@@ -115,6 +115,7 @@ and open the template in the editor.
               <input class="btn btn-primary" value="Actualizar" type="submit">
             <span></span>
             <input class="btn btn-default" value="Cancel" type="reset">
+            <input class="btn btn-default" value="Cancel" type="button" onclick="location.href='<?=URLBASE?>/CerrarSesion.php'">
           </div>
         </div>
       </form>
