@@ -37,7 +37,7 @@ $sNomArchivo=$_FILES["imgusuario"]["name"];
 move_uploaded_file($_FILES["imgusuario"]["tmp_name"], $sDirArchivo);
 
 /*Actualización en la BBDD*/
-$oUsr->setNomarchivo($idusuario.".".$arrfile["extension"]);
-$oUsr->setArchivo($sNomArchivo);
+$oUsr->setNomarchivo($sNomArchivo);
+$oUsr->setArchivo($idusuario.".".$arrfile["extension"]);
 
 $oUsr->ActualizaDatos();

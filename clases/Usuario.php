@@ -81,7 +81,7 @@ function getNomarchivo() {
             return false;
         }
         
-        $PDOst=$dblink->prepare('select idusuario,nombre
+        $PDOst=$dblink->prepare('select idusuario,nombre,nomarchivo,archivo
                                  from usuario
                                  where nomusu=? and clave=?');
         
@@ -89,6 +89,8 @@ function getNomarchivo() {
 
         if ( $row=$PDOst->fetch(PDO::FETCH_OBJ)){
             $this->nombre=$row->nombre;
+            $this->archivo=$row->archivo;
+            $this->nomarchivo=$row->nomarchivo;
             $this->id=$row->idusuario;
             return true;
         }
