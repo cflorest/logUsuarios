@@ -75,7 +75,7 @@ and open the template in the editor.
         <div class="form-group">
           <label class="col-lg-3 control-label">Nombre:</label>
           <div class="col-lg-8">
-            <input class="form-control" value="<?=$oUsr->getNombre();?>" type="text">
+            <input name="nombre" class="form-control" value="<?=$oUsr->getNombre();?>" type="text">
           </div>
         </div>
         
@@ -100,13 +100,13 @@ and open the template in the editor.
         <div class="form-group">
           <label class="col-md-3 control-label">Clave:</label>
           <div class="col-md-8">
-            <input class="form-control" value="" type="password">
+            <input name="clave1" class="form-control" value="" type="password">
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-3 control-label">Confirme la clave:</label>
           <div class="col-md-8">
-            <input class="form-control" value="" type="password">
+            <input name="clave2" class="form-control" value="" type="password">
           </div>
         </div>
         <div class="form-group">
@@ -115,7 +115,7 @@ and open the template in the editor.
               <input class="btn btn-primary" value="Actualizar" type="submit">
             <span></span>
             <input class="btn btn-default" value="Cancel" type="reset">
-            <input class="btn btn-default" value="Cancel" type="button" onclick="location.href='<?=URLBASE?>/CerrarSesion.php'">
+            <input class="btn btn-default" value="Cerrar sesión" type="button" onclick="location.href='<?=URLBASE?>/CerrarSesion.php'">
           </div>
         </div>
       </form>
